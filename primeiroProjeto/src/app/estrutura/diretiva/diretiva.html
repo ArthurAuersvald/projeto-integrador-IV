@@ -1,0 +1,6 @@
+<p *ngIf="mostrarMensagem">A lista está sendo vizualizada</p>>
+<button (click)="mostrarMensagem = !mostrarMensagem">V/Oc</button>
+
+<ul>
+    <li *ngFor="let item of listaItens">{{ item }}</li>
+</ul>
