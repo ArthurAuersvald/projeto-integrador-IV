@@ -1,6 +1,13 @@
-<p *ngIf="mostrarMensagem">A lista está sendo vizualizada</p>>
-<button (click)="mostrarMensagem = !mostrarMensagem">V/Oc</button>
+<button (click) = toggleMensagem()>Visualizar/Ocultar</button>
 
-<ul>
-    <li *ngFor="let item of listaItens">{{ item }}</li>
+<ul *ngIf="mostrarMensagem">
+    <li *ngFor="let aluno of alunos"
+        [ngClass]="{'azul': aluno.status, 'vermelho': !aluno.status}"
+        [ngStyle]="{'font-size.px': fonte}"
+    >
+        {{ aluno.id }} - {{ aluno.nome }} - {{ aluno.status }}
+    </li>
 </ul>
+
+<button (click)="aumentarFonte()">A+</button>
+<button (click)="diminuirFonte()">A-</button>
