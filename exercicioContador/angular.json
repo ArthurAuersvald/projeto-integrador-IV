@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "primeiroProjeto": {
+    "exercicioContador": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "primeiroProjeto:build:production"
+              "buildTarget": "exercicioContador:build:production"
             },
             "development": {
-              "buildTarget": "primeiroProjeto:build:development"
+              "buildTarget": "exercicioContador:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "821af319-d1ee-4da2-992e-9289d547121e"
+    "analytics": "b0135f0b-97ce-42de-ab36-ee12a22ffad1"
   }
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Diretiva } from './diretiva';
+import { Soma } from './soma';
 
-describe('Diretiva', () => {
-  let component: Diretiva;
-  let fixture: ComponentFixture<Diretiva>;
+describe('Soma', () => {
+  let component: Soma;
+  let fixture: ComponentFixture<Soma>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Diretiva]
+      declarations: [Soma]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Diretiva);
+    fixture = TestBed.createComponent(Soma);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
