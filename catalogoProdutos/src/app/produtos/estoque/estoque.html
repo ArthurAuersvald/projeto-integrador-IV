@@ -3,8 +3,11 @@
 <ul>
     <li *ngFor="let produto of produtos"
         [ngClass]="{'verde': produto.estoque > 0, 'vermelho': produto.estoque === 0}">
-        <b>ID:</b> {{produto.id}} - <b>Nome:</b> {{produto.nome}} - <b>Estoque:</b> {{produto.estoque}} - 
+        <b>Nome:</b> {{produto.nome}} - <b>Valor: {{produto.valor | number:'1.2-2'}}</b> - <b>Estoque:</b> {{produto.estoque}} - 
         <span *ngIf="produto.estoque > 0; else indisponivel"><b>Disponível</b></span>
         <ng-template #indisponivel><b>Indisponível</b></ng-template>
     </li>
 </ul>
+
+<button (click)="aumentarValor()">Aumentar valor em 10%</button>
+<button (click)="diminuirValor()">Diminuir valor em 10%</button>
