@@ -1,1 +1,10 @@
-<p></p>
+<h1>Catálogo de Produtos</h1>
+
+<ul>
+    <li *ngFor="let produto of produtos"
+        [ngClass]="{'verde': produto.estoque > 0, 'vermelho': produto.estoque === 0}">
+        <b>ID:</b> {{produto.id}} - <b>Nome:</b> {{produto.nome}} - <b>Estoque:</b> {{produto.estoque}} - 
+        <span *ngIf="produto.estoque > 0; else indisponivel"><b>Disponível</b></span>
+        <ng-template #indisponivel><b>Indisponível</b></ng-template>
+    </li>
+</ul>
