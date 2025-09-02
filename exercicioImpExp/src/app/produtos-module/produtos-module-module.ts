@@ -14,6 +14,9 @@ import { SharedModuleModule } from '../shared-module/shared-module-module';
     CommonModule,
     ProdutosModuleRoutingModule,
     SharedModuleModule
+  ],
+  exports: [
+    ListaProdutosComponent
   ]
 })
 export class ProdutosModuleModule { }

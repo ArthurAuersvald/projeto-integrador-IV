@@ -14,7 +14,6 @@ import { SharedModuleModule } from './shared-module/shared-module-module';
     BrowserModule,
     AppRoutingModule,
     ProdutosModuleModule,
-    ProdutosModuleModule,
     SharedModuleModule
   ],
   providers: [
